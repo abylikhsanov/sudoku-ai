@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="89022028-c72d-49c2-a1bf-c6638510cb20" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solution.py" afterPath="$PROJECT_DIR$/solution.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,8 +20,8 @@
       <file leaf-file-name="solution.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/solution.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="657">
-              <caret line="225" column="70" lean-forward="true" selection-start-line="225" selection-start-column="70" selection-end-line="225" selection-end-column="70" />
+            <state relative-caret-position="330">
+              <caret line="33" column="43" lean-forward="false" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -30,7 +30,7 @@
       <file leaf-file-name="solution_test.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/solution_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="900">
+            <state relative-caret-position="536">
               <caret line="90" column="21" lean-forward="false" selection-start-line="90" selection-start-column="21" selection-end-line="90" selection-end-column="21" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
@@ -90,10 +90,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="23" />
-    <option name="y" value="23" />
+    <option name="x" value="33" />
+    <option name="y" value="26" />
     <option name="width" value="1392" />
-    <option name="height" value="844" />
+    <option name="height" value="843" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -161,7 +161,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="23" y="23" width="1392" height="844" extended-state="0" />
+    <frame x="33" y="26" width="1392" height="843" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2579023" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -335,16 +335,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/objects/SudokuSquare.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/visualize.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -361,9 +351,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/objects/SudokuSquare.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/solution_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
+        <state relative-caret-position="536">
           <caret line="90" column="21" lean-forward="false" selection-start-line="90" selection-start-column="21" selection-end-line="90" selection-end-column="21" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
@@ -373,8 +373,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/solution.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="657">
-          <caret line="225" column="70" lean-forward="true" selection-start-line="225" selection-start-column="70" selection-end-line="225" selection-end-column="70" />
+        <state relative-caret-position="330">
+          <caret line="33" column="43" lean-forward="false" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
           <folding />
         </state>
       </provider>

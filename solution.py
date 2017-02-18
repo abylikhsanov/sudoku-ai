@@ -30,9 +30,8 @@ def naked_twins(values):
     for x in boxes:
         for unit in units[x]:
             for peer in set(unit).intersection(set(peers[x])):
-                if not set(values[peer]).difference(set([x,peer])):
+                if values[peer] == values[x]:
                     if len(values[x]) == 2:
-                        print ('found!')
                         digit1 = values[x][0]
                         digit2 = values[x][1]
                         for item in set(unit).difference(set([x,peer])):
@@ -42,6 +41,7 @@ def naked_twins(values):
                             if digit2 in values[item]:
                                 values[item] = (values[item]).replace(digit2,'')
                                 assign_value(values, item, values[item])
+    display(values)
 
     return values
 
