@@ -23,8 +23,6 @@ def naked_twins(values):
         values(dict): a dictionary of the form {'box_name': '123456789', ...}
 <<<<<<< HEAD
 =======
-
->>>>>>> origin/master
     Returns:
         the values dictionary with the naked twins eliminated from peers.
     """
@@ -34,14 +32,8 @@ def naked_twins(values):
     for x in boxes:
         for unit in units[x]:
             for peer in set(unit).intersection(set(peers[x])):
-<<<<<<< HEAD
                 if values[peer] == values[x]:
                     if len(values[x]) == 2:
-=======
-                if not set(values[peer]).difference(set([x,peer])):
-                    if len(values[x]) == 2:
-                        print ('found!')
->>>>>>> origin/master
                         digit1 = values[x][0]
                         digit2 = values[x][1]
                         for item in set(unit).difference(set([x,peer])):
@@ -51,10 +43,8 @@ def naked_twins(values):
                             if digit2 in values[item]:
                                 values[item] = (values[item]).replace(digit2,'')
                                 assign_value(values, item, values[item])
-<<<<<<< HEAD
     display(values)
-=======
->>>>>>> origin/master
+
 
     return values
 
@@ -85,11 +75,6 @@ def cross_diagonal2(A,B):
     return boxes
 
 
-<<<<<<< HEAD
-
-
-=======
->>>>>>> origin/master
 boxes = cross(rows, cols)
 
 row_units = [cross(r, cols) for r in rows]
@@ -100,9 +85,6 @@ units = dict((s, [u for u in unitlist if s in u]) for s in boxes)
 peers = dict((s, set(sum(units[s],[]))-set([s])) for s in boxes)
 diagonal1 = cross_diagonal1(rows,cols)
 diagonal2 = cross_diagonal2(rows,cols)
-<<<<<<< HEAD
-peersdiagonal1 = peers.copy()
-peersdiagonal2 = peers.copy()
 for x in diagonal1:
     for s in diagonal1:
         peers[x].add(s)
@@ -111,9 +93,7 @@ for x in diagonal2:
     for s in diagonal2:
         peers[x].add(s)
     peers[x].remove(x)
-=======
-print (diagonal2)
->>>>>>> origin/master
+
 
 def grid_values(grid):
     """
@@ -139,7 +119,6 @@ def display(values):
     Args:
         values(dict): The sudoku in dictionary form
     """
-<<<<<<< HEAD
     width = 1 + max(len(values[s]) for s in boxes)
     line = '+'.join(['-' * (width * 3)] * 3)
     for r in rows:
@@ -147,9 +126,6 @@ def display(values):
                       for c in cols))
         if r in 'CF': print(line)
     print
-=======
-    pass
->>>>>>> origin/master
 
 def eliminate(values):
     """
@@ -165,10 +141,6 @@ def eliminate(values):
     return values
 
 
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/master
 def only_choice(values):
     for unit in unitlist:
         for digit in '123456789':
@@ -225,10 +197,6 @@ def solve(grid):
     """
 
     grid1 = grid_values(grid)
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/master
     g = dict(zip(boxes,grid1))
     values_reduce = reduce_puzzle(g)
     values = search(values_reduce)
@@ -243,11 +211,8 @@ if __name__ == '__main__':
     diag_sudoku_grid = '2.............62....1....7...6..8...3...9...7...6..4...4....8....52.............3'
     solve(diag_sudoku_grid)
     values = solve(diag_sudoku_grid)
-<<<<<<< HEAD
     display(values)
-=======
-    display(naked_twins(values))
->>>>>>> origin/master
+
 
 
 
@@ -258,8 +223,5 @@ if __name__ == '__main__':
     except SystemExit:
         pass
     except:
-<<<<<<< HEAD
         print('We could not visualize your board due to a pygame issue. Not a problem! It is not a requirement.')
-=======
-        print('We could not visualize your board due to a pygame issue. Not a problem! It is not a requirement.')
->>>>>>> origin/master
+
